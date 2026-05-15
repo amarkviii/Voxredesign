@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<!-- Version 4.1-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title> Fifteen Minutes of Fame - Home </title>
+<link href="http://www.voxnovus.com/style/15_Minutes_of_Fame.css" type="text/css" rel="stylesheet" media="all">
+<style type="text/css" media="all">
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1>
+			Fifteen Minutes of Fame
+		</h1>
+	</div>
+
+	<div id="top-navigation" >
+		<ul>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/home" >Home </a></li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/calendar" > Calendar </a></li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/video">   Audio/Video  </a> </li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/musicians">   Musicians  </a> </li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/composers">   Composers  </a> </li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/calls"> Calls </a></li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/FAQ">   FAQ  </a> </li>
+			<li><a href="http://www.voxnovus.com" >Vox_Novus</a></li>
+		</ul>
+	</div>
+
+	<div id="content-container">
+		<div id="content-header">
+			<h2>
+				<strong>Fifteen Minutes of Fame</strong>
+			</h2>
+
+		</div>
+
+		<div id="section" style="padding:10px;display:block;">
+				<img src="http://www.voxnovus.com/img/Fifteen-Minutes-of-Fame_logo.png" width="300" style="background-color:white;border-radius: 15px;float:right;">
+		</div>
+
+		<div id="section">
+			
+			<p>
+<i><b>Fifteen Minutes of Fame</b></i> </font>is <b>15 one-minute </b> works by different composers written for a specific performer or ensemble. 
+			</p>
+			<p>
+<i><b>Fifteen Minutes of Fame</b></i> gives a variety of new music by living composers to audiences hungry to hear what is being created in today's music scene.  
+			</p>
+<blockquote style="text-align:justify;">
+"...the 15 Minutes of Fame project of Vox Novus is a godsend. It organizes competitions whereby ensembles commission worldwide calls for submissions of approximately one-minute pieces, and then select their 15 favorites for premieres. The players, themselves emerging and without the funds for a traditional commission fee, get original works to present, while the likewise emerging composers get a chance for exposure and a premiere...<!-- for minimal effort and commitment.-->"
+-  Seth Gilman <!-- <a href="http://www.examiner.com/article/a-parhelion-sighting-queens-part-2">-->NY Music Culture Examiner 
+</blockquote>
+<!--
+			<p>
+<a href="http://www.VoxNovus.com/">Vox Novus</a> places a <a href="http://www.VoxNovus.com/15_Minutes_of_Fame/calls">call for scores</a> and 15 pieces are chosen from the works submitted.  The works are then premiered on the <a href="http://www.VoxNovus.com/ComposersVoice">Composer Voice concert series</a> in New York City.  
+			</p>
+-->
+
+
+
+
+<!--
+			<p>
+The idea grew out of a <a href="http://www.VoxNovus.com/15_Minutes_of_Fame/featuring/Shiau-uen_Ding/15_Minutes_for_Voisey/">celebratory concert in 2009</a> for the birthday of <a href="http://www.VoxNovus.com/composer/Robert_Voisey.htm">Robert Voisey</a> who is the <a href="http://www.voxnovus.com/founder">founder of Vox Novus</a> and known for his <a href="http://www.VoxNovus.com/60x60">60x60</a> project. 
+</font>			</p>
+
+			<p>
+<a href="http://www.VoxNovus.com/15_Minutes_of_Fame/featuring/Shiau-uen_Ding/">Shiau-uen Ding</a> premiered the first official Fifteen Minutes of Fame on March 27, 2011 and can be seen at: <a href="http://www.VoxNovus.com/15_Minutes_of_Fame/featuring/Shiau-uen_Ding/15_Minutes_for_Voisey/">Fifteen Minutes of Fame for Shiau-uen Ding</a>.  
+			</p>
+-->
+
+		<div id="section" style="display:block;padding:10px;">
+				<a href="http://www.VoxNovus.com/15_Minutes_of_Fame/musicians"><img src="http://www.voxnovus.com/member/pic/Crane_Harp_Ensemble_2013_02.jpg" width="300" style="float:right;background-color:white;border-radius: 15px;"></a>
+		</div>
+
+			<p>
+Since the beginning of the project, there have been more than 100 calls for scores for different musicians.  the instrumentation ranged from solo piano to concert band including string quartet, saxophone quartet, and woodwind quintet.   Fifteen-Minutes-of-Fame gives opportunites a vast variety of types of instruments including harp, accordion, clavichord, bass flute, toy piano, oud, hichiriki, taishogoto, and melodica.
+<br><br>
+A list of the musicians and ensembles who have participated can be found on the <a href="http://www.VoxNovus.com/15_Minutes_of_Fame/musicians">Fifteen Minutes of Fame Musician Page.</a>
+
+The variety and quality of the musicians exemplifies <i><b>Fifteen Minutes of Fame's</b></i> organization and popularity. 
+			</p>
+
+			<p>
+The <i><b>Fifteen Minutes of Fame</b></i> project endeavors to record and archive all of its performances.  You can see and hear past performances on the playlists located on the <a href="http://www.VoxNovus.com/15_Minutes_of_Fame/video">Fifteen Minutes of Fame Video Page</a>
+			</p>
+
+			<p>
+There are usually multiple calls for works for several different ensembles at any given time.  A living composer has many opportunities to write a new work to receive a world premiere. 
+The <i><b>Fifteen Minutes of Fame</b></i> calls are announced far in advance to allow for composers to germinate an idea and well craft their score. 
+A full list of current writing opportunities for composers can be found on the <a href="http://www.VoxNovus.com/15_Minutes_of_Fame/calls"> Call for Works' Page</a>
+			</p>
+
+
+
+<blockquote style="text-align:justify;">
+<!--
+"It is an ingenious way to dramatically increase the number of new composers a given series can accommodate." The short duration of the one-minute format give rise for the composer to experiment and the freedom to express their aesthetic. "The brief time limit is also a catalyst for experimentation: when the pressure is off to develop or sustain a composition the pressure is on to make what little time you have very interesting"<a href="http://artificialist.blogspot.com/2013/08/looking-for-something-to-do-this.html?updated-min=2013-01-01T00%3A00%3A00-08%3A00&updated-max=2014-01-01T00%3A00%3A00-08%3A00&max-results=7">-Artificialist</a>
+-->
+" The obvious strength of that approach is that it allows many composers to gain exposure in a short time span. But there is also an esthetic benefit... Since the pieces are performed in quick succession and each has a character of its own, the audience is treated to a kaleidoscope of styles; in turn textural and tonal, avant-garde and neo-romantic... like the entire smorgasbord of contemporary idioms was playing a game of musical chairs, so to speak, and the effect was thrilling. "
+
+
+<!-- <a href="http://artificialist.blogspot.com/2013/08/looking-for-something-to-do-this.html?updated-min=2013-01-01T00%3A00%3A00-08%3A00&updated-max=2014-01-01T00%3A00%3A00-08%3A00&max-results=7">- -->Damjan Rakonjac, Artificialist
+</blockquote>
+
+<p>
+		<div id="section" style="margin:10px;display:block;">
+				<a href="http://www.VoxNovus.com/15_Minutes_of_Fame/composers"><img src="http://www.VoxNovus.com/15_Minutes_of_Fame/images/Fifteen-Minutes-of-Fame_Andrew_White-accompanied.jpg" width="300" style="float:right;background-color:white;border-radius: 15px;"></a>
+		</div>
+</p>
+			<p>
+More than 600 composers have been chosen to have their works premiered.  The composers selected are from more than 30 countries around the world; their compositional style and aesthetic are as diverse as the different cultures they represent. 
+A list of composers who have been selected can be found on the <a href="http://www.VoxNovus.com/15_Minutes_of_Fame/composers">Fifteen Minutes of Fame Composer Page.</a>
+			</p>
+			<p>
+There have been over 100 performances of <i><b>Fifteen Minutes of Fame</b></i>.   
+<br><br>
+Most of the premieres happen on the <a href="http://www.ComposersVoice.com">Composer's Voice concert series</a> in New York City. <i><b>Fifteen Minutes of Fame</b></i> has also premiered its sets of 15 in Los Angeles, Chicago, Washington D.C., Rio de Janeiro, Bremen, Tel Aviv, Bucharest, and many other cities across the globe.
+<br><br>
+Upcoming  performances can be found on the <a href="http://www.VoxNovus.com/15_Minutes_of_Fame/calendar">Fifteen Minutes of Fame Calendar Page</a>.
+			</p>
+
+<!--
+	Besides premiering the works which are selected, close to half of the performances are encores of the sets of 15 performed by the original performers or by other performers who are inspired to play the works.
+-->
+<!--
+			<p>
+Fifteen Minutes of Fame has received support from the <a href="http://www.puffinfoundation.org/">Puffin Foundation</a> through the <a href="http://www.VoxNovus.com/ComposersVoice">Composer Voice concert series</a>.  As well as in-kind support from <a href="http://www.VoxNovus.com/">Vox Novus</a>, <a href="http://www.remarkabletheaterbrigade.com/">Remarkable Theater Brigade</a> and <a href="http://www.janhus.org/">Jan Hus Church</a>.
+			</p>
+-->
+
+<!--
+		<div id="section" style="padding:10px;display:block;">
+				<a href="http://www.voxnovus.com/founder"><img src="http://www.voxnovus.com/composer/pic/Robert_Voisey_055.jpg" width="300" style="background-color:white;border-radius: 15px;float:right;"></a>
+		</div>
+
+-->
+
+			<p>
+<i><b>Fifteen Minutes of Fame</i></b> was created by producer and composer <a href="http://www.VoxNovus.com/composer/Robert_Voisey.htm">Robert Voisey</a> to create an opportunity for composers to get their works performed and heard by audiences around the world.   
+
+			</p>
+
+
+		</div>
+
+
+	</div>
+
+	<div id="bottom-navigation" >
+		<ul>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/home" >Home </a></li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/calendar" > Calendar </a></li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/video">   Audio/Video  </a> </li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/musicians">   Musicians  </a> </li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/composers">   Composers  </a> </li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/calls"> Calls </a></li>
+			<li><a href="http://www.VoxNovus.com/15_Minutes_of_Fame/FAQ">   FAQ  </a> </li>
+			<li><a href="http://www.voxnovus.com" >Vox_Novus</a></li>
+		</ul>
+	</div>
+
+</div>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7458320; 
+var sc_invisible=1; 
+var sc_security="bceb2461"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="website
+statistics" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/7458320/0/bceb2461/1/"
+alt="website statistics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
+				
+
+
