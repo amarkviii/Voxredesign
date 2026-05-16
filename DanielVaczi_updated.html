@@ -14,7 +14,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f9f9f9;
+            background-color: #000;
             color: #333;
         }
 
@@ -24,6 +24,7 @@
             padding: 20px;
         }
 
+        /* --- Header --- */
         header {
             text-align: center;
             margin-bottom: 20px;
@@ -32,15 +33,18 @@
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            color: #fff;
         }
 
-        nav {
-            background-color: #222;
+        /* --- Top Nav Bar --- */
+        .top-nav {
+            background-color: #1a1a1a;
             padding: 10px;
             border-radius: 8px;
+            position: relative;
         }
 
-        nav ul {
+        .top-nav .nav-links {
             list-style: none;
             display: flex;
             flex-wrap: wrap;
@@ -48,18 +52,55 @@
             gap: 15px;
         }
 
-        nav ul li a {
+        .top-nav .nav-links li a {
             text-decoration: none;
-            color: #fff;
+            color: #ccc;
             padding: 5px 10px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        nav ul li a:hover {
-            background-color: #555;
+        .top-nav .nav-links li a:hover {
+            background-color: #444;
+            color: #fff;
             border-radius: 4px;
         }
 
+        /* --- Hamburger Button --- */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 3px;
+            background-color: #ccc;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* --- Main Content --- */
         main {
             display: flex;
             flex-direction: column;
@@ -70,7 +111,7 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
         }
 
         section img {
@@ -99,41 +140,6 @@
             margin-bottom: 10px;
         }
 
-        blockquote {
-            border-left: 4px solid #ccc;
-            padding-left: 15px;
-            margin: 15px 0;
-            font-style: italic;
-            color: #555;
-        }
-
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            border-radius: 8px;
-        }
-
-        footer ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            list-style: none;
-            padding: 0;
-        }
-
-        footer ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        footer ul li a:hover {
-            text-decoration: underline;
-        }
-
         .float-right {
             float: right;
             margin-left: 20px;
@@ -145,6 +151,7 @@
             border-radius: 15px;
         }
 
+        /* --- Composer Cards --- */
         .composer-entry {
             display: flex;
             gap: 20px;
@@ -163,15 +170,116 @@
             flex: 1;
         }
 
+        .divider {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+
         a {
             color: #1a6fb5;
             word-break: break-word;
         }
 
         a:hover {
-            color: #104a7a;
+            color: #4a9fe5;
         }
 
+        /* --- Top Nav Bar (repeated at bottom) --- */
+        .bottom-bar {
+            background-color: #1a1a1a;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .bottom-bar ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .bottom-bar ul li a {
+            text-decoration: none;
+            color: #ccc;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .bottom-bar ul li a:hover {
+            background-color: #444;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        /* --- Expanded Footer --- */
+        footer {
+            margin-top: 20px;
+            padding: 30px 20px;
+            background-color: #111;
+            color: #999;
+            border-radius: 8px;
+        }
+
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .footer-bottom a {
+            color: #888;
+        }
+
+        .footer-bottom a:hover {
+            color: #fff;
+        }
+
+        /* --- Responsive --- */
         @media (max-width: 768px) {
             #container {
                 padding: 10px;
@@ -181,14 +289,26 @@
                 font-size: 1.8rem;
             }
 
-            nav ul {
-                gap: 5px;
+            .hamburger {
+                display: block;
             }
 
-            nav ul li a {
-                padding: 10px 12px;
-                font-size: 0.95rem;
+            .top-nav .nav-links {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 10px;
+            }
+
+            .top-nav .nav-links.open {
+                display: flex;
+            }
+
+            .top-nav .nav-links li a {
+                padding: 12px 20px;
                 display: block;
+                width: 100%;
+                text-align: center;
             }
 
             section {
@@ -218,28 +338,13 @@
                 height: 120px;
             }
 
-            footer ul {
-                gap: 5px;
-            }
-
-            footer ul li a {
-                padding: 8px 10px;
-                display: inline-block;
+            .footer-columns {
+                flex-direction: column;
+                gap: 25px;
             }
         }
 
         @media (max-width: 480px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li a {
-                padding: 12px 20px;
-                width: 100%;
-                text-align: center;
-            }
-
             .composer-entry img {
                 width: 100px;
                 height: 100px;
@@ -253,8 +358,13 @@
         <h1>Fifteen Minutes of Fame</h1>
     </header>
 
-    <nav>
-        <ul>
+    <nav class="top-nav">
+        <button class="hamburger" onclick="this.classList.toggle('active'); document.getElementById('topMenu').classList.toggle('open');" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="topMenu">
             <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/">About</a></li>
             <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/concerts">Concerts</a></li>
             <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/musicians">Musicians</a></li>
@@ -292,7 +402,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Bracha_Bdil.jpg" alt="Bracha Bdil">
@@ -303,7 +413,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/David_Bohn_15.jpg" alt="David Bohn">
@@ -314,7 +424,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Erik_Branch_015.jpg" alt="Erik Branch">
@@ -326,7 +436,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Michael_Coleman.jpg" alt="Michael Coleman">
@@ -338,7 +448,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Douglas_DaSilva.jpg" alt="Douglas DaSilva">
@@ -350,7 +460,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Petri_Kuljuntausta.jpg" alt="Petri Kuljuntausta">
@@ -362,7 +472,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Erick_Odiweric.jpg" alt="Erick Odiweric">
@@ -373,7 +483,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Etienne_Rolin.jpg" alt="Etienne Rolin">
@@ -385,7 +495,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Juan_Maria_Solare_15.jpg" alt="Juan Maria Solare">
@@ -397,7 +507,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Jason_Taurins.jpg" alt="Jason A. Taurins">
@@ -409,7 +519,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Alex_Temple.jpg" alt="Alex Temple">
@@ -421,7 +531,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Jean-Pierre_Vial.jpg" alt="Jean-Pierre Vial">
@@ -433,7 +543,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Anna_Vriend.jpg" alt="Anna Vriend">
@@ -445,7 +555,7 @@
                 </div>
             </div>
 
-            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+            <hr class="divider">
 
             <div class="composer-entry">
                 <img src="img/Mark_Zaki.jpg" alt="Mark Zaki">
@@ -459,7 +569,7 @@
         </section>
     </main>
 
-    <footer>
+    <nav class="bottom-bar">
         <ul>
             <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/">About</a></li>
             <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/concerts">Concerts</a></li>
@@ -468,6 +578,43 @@
             <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/calls">Calls for Scores</a></li>
             <li><a href="http://www.voxnovus.com">Vox Novus</a></li>
         </ul>
+    </nav>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>15 Minutes of Fame</h4>
+                <ul>
+                    <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/">About</a></li>
+                    <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/concerts">Concerts</a></li>
+                    <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/video">Audio/Video</a></li>
+                    <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/musicians">Musicians</a></li>
+                    <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/composers">Composers</a></li>
+                    <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/calls">Calls for Scores</a></li>
+                    <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/FAQ">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Vox Novus Projects</h4>
+                <ul>
+                    <li><a href="http://www.voxnovus.com/composersvoice/home">Composer's Voice</a></li>
+                    <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/">Fifteen Minutes of Fame</a></li>
+                    <li><a href="http://www.voxnovus.com/composersvoice/featuring/contemporaryquartets/">Contemporary Quartets</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="http://www.voxnovus.com">Vox Novus</a></li>
+                    <li><a href="http://www.voxnovus.com/composersvoice/contact">Contact</a></li>
+                    <li><a href="https://www.facebook.com/ComposersVoiceConcertSeries">Facebook</a></li>
+                    <li><a href="https://youtube.com/playlist?list=PLYfklf7dNh3soxzDgkeo3WDm5Ir6UKjQg">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 <a href="http://www.voxnovus.com">Vox Novus</a>. All rights reserved.
+        </div>
     </footer>
 </div>
 </body>
