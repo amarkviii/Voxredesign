@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Vaczi - Fifteen Minutes of Fame</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        section img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        section h4 {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        footer ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .float-right {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .headshot {
+            max-width: 300px;
+            border-radius: 15px;
+        }
+
+        .composer-entry {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .composer-entry img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        .composer-entry .composer-info {
+            flex: 1;
+        }
+
+        a {
+            color: #1a6fb5;
+            word-break: break-word;
+        }
+
+        a:hover {
+            color: #104a7a;
+        }
+
+        @media (max-width: 768px) {
+            #container {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 5px;
+            }
+
+            nav ul li a {
+                padding: 10px 12px;
+                font-size: 0.95rem;
+                display: block;
+            }
+
+            section {
+                padding: 15px;
+                border-radius: 8px;
+            }
+
+            section h2 {
+                font-size: 1.3rem;
+            }
+
+            .float-right {
+                float: none;
+                display: block;
+                margin: 0 auto 15px auto;
+                max-width: 100% !important;
+            }
+
+            .composer-entry {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .composer-entry img {
+                width: 120px;
+                height: 120px;
+            }
+
+            footer ul {
+                gap: 5px;
+            }
+
+            footer ul li a {
+                padding: 8px 10px;
+                display: inline-block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li a {
+                padding: 12px 20px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .composer-entry img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Fifteen Minutes of Fame</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/">About</a></li>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/concerts">Concerts</a></li>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/musicians">Musicians</a></li>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/composers">Composers</a></li>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/calls">Calls for Scores</a></li>
+            <li><a href="http://www.voxnovus.com">Vox Novus</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Daniel Vaczi</h2>
+            <img src="img/Daniel_Vaczi.jpg" alt="Daniel Vaczi" class="float-right headshot">
+            <h3>Fifteen Minutes of Fame featuring the Glissotar with Daniel Vaczi</h3>
+            <p>Daniel Vaczi is one of the most exciting, multi-talented and versatile musicians of the Hungarian music scene. An inventor of instrument-families (Glissonic) and logic games (Urobo), composer, saxophonist and multi-instrumentalist, he explores and pushes the boundaries of classical, contemporary and jazz. He composes music for different formations, player piano/organ etc. As a musical theorist he invented a new musical system called 'reticular', meaning grid-like in which the pitch of the note is connected to its position in time; a kind of spacetime in music. With his musical groups they discover and search for the unity of strict compositions and free improvisations, using the toolkit of contemporary classical music and modern jazz.</p>
+            <p><a href="https://danielvaczi.hu/">https://danielvaczi.hu/</a></p>
+            <p>Glissonic is a completely new wind instrument family. The main novelty is that instead of tone holes it uses a longitudinal gap or slot on the tube of the instrument. The two sides of the slot are covered with magnetic foil which attract a magnetized ribbon on top. The ribbon is fixed on the upper end, stretched and lifted up from the lower end as a string on a violin. You can push down the ribbon anywhere, it will seal up perfectly above it, so you can produce any note in the pitch continuum. It can be played with eight fingers of the two hands or by sliding one finger up and down. The glissotar is a glissonic tarogato (similar to a wooden soprano saxophone). The glissonic system can be used on all kinds of wind instruments: flute, whistle, clarinet, saxophone, oboe and even the cornett.</p>
+        </section>
+
+        <section>
+            <h2>Concert Dates</h2>
+            <p>To be announced.</p>
+        </section>
+
+        <section>
+            <h2>Fifteen Minutes of Fame</h2>
+
+            <div class="composer-entry">
+                <img src="img/Aarohan_Jai_Anand.jpg" alt="Aarohan Jai Anand">
+                <div class="composer-info">
+                    <h3>GLISS</h3>
+                    <h4>Aarohan Jai Anand</h4>
+                    <p>Written for Daniel Vaczi's 'Glissotar' to display some of its virtuosic playing principles and extended techniques.</p>
+                    <p>Aarohan Jai Anand (b. 2009, 15 yrs) is a young composer, pianist, and hornist hailing from Chicagoland, IL (USA), and is an aspiring music educator. As of the 2025-26 school year, Aarohan is a high school sophomore. He is a horn player for his school's Wind Ensemble, as well as a mellophonist in the school's competitive marching band. Every year since 2023, he has attended Blue Lake Fine Arts Camp in Michigan. He was selected to be part of the ILMEA 2023-24 District 9 Junior Band, and as second horn in the prestigious 2025-26 District 9 ILMEA Senior Band.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Bracha_Bdil.jpg" alt="Bracha Bdil">
+                <div class="composer-info">
+                    <h3>Pastoral</h3>
+                    <h4>Bracha Bdil</h4>
+                    <p>Bracha Bdil (1988), is an Israeli-British composer, conductor, and pianist, winner of the Prime Minister's Award for Composition (Israel, 2022) and the ACUM Award (2019). Her repertoire spans different mediums including orchestral music, chamber, vocal and electronic music.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/David_Bohn_15.jpg" alt="David Bohn">
+                <div class="composer-info">
+                    <h3>Tarocatta</h3>
+                    <h4>David Bohn</h4>
+                    <p>David Bohn received degrees in composition from the University of Wisconsin, University of Wisconsin-Milwaukee, and the University of Illinois. He currently resides in West Allis, Wisconsin, and is the music coordinator at Peace Methodist Church in Brookfield. He is the President of the Wisconsin Alliance for Composers.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Erik_Branch_015.jpg" alt="Erik Branch">
+                <div class="composer-info">
+                    <h3>LIKE A HORSE OF THE MOUNTAINS</h3>
+                    <h4>Erik Branch</h4>
+                    <p>"...here he [Lugalbanda] on his own set a trap in the ground, and from that spot he sped away like a horse of the mountains." (From the Sumerian myth, Lugalbanda in the Mountain Cave.) The rhythm of the music suggests a horse's cantering, pausing, and rushing away.</p>
+                    <p>Erik Branch is a native of New York City, and received a BA and MA in Music (Composition) from Hunter College. He lives near Orlando, Florida, where he is active as a pianist, musical director, composer/arranger, operatic tenor, and actor on stage and screen.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Michael_Coleman.jpg" alt="Michael Coleman">
+                <div class="composer-info">
+                    <h3>Glissotude #3</h3>
+                    <h4>Michael Coleman</h4>
+                    <p>"Glissotude #3" is dedicated to Daniel Vaczi as part of his Fifteen-Minutes-of-Fame project. This etude has a somewhat mechanical, forward-drive effect and features some of the glissando possibilities of the glissotar (glissonic tarogato).</p>
+                    <p>Michael Coleman has participated as composer/pianist in numerous new music programs and festivals in the U.S. and Russia and has also had works performed in North &amp; Central America, Europe, and Eurasia. He currently teaches at Pensacola State College and the University of West Florida.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Douglas_DaSilva.jpg" alt="Douglas DaSilva">
+                <div class="composer-info">
+                    <h3>Saṃsara (Birth)</h3>
+                    <h4>Douglas DaSilva</h4>
+                    <p>I composed five one-minute pieces based on the concept of Saṃsāra (cycle of death &amp; rebirth) for this intriguing call: "Birth"; "Life"; "Blues"; "Death"; &amp; "Rebirth". Each work individually as well as a cycle. From these I selected the first that I composed: the cuica-inspired "Birth" as my submission.</p>
+                    <p>Douglas DaSilva spends his days teaching music &amp; martial arts to very young children in NYC. He feeds off the positive life-energy of children. Every day he questions whether the relationship is symbiotic or if the souls of the young will wither away prematurely as he recharges parasitically.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Petri_Kuljuntausta.jpg" alt="Petri Kuljuntausta">
+                <div class="composer-info">
+                    <h3>Conversation Between Birds Early in the Morning</h3>
+                    <h4>Petri Kuljuntausta</h4>
+                    <p>The work is a short study for a new instrument, the Glissotar, inspired by birdsong. I am exploring the musical dimensions of birdsong in my multi-year artistic research project and developing a method for playing on an equal footing with birds and nature.</p>
+                    <p>Petri Kuljuntausta works as a Composer, Sound Artist, Musician and Writer-Researcher. He works with environmental sounds and live-electronics, and creates sound installations for galleries and museums. Kuljuntausta is Adjunct Professor (Docent) of Sound Art and Electronic Music.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Erick_Odiweric.jpg" alt="Erick Odiweric">
+                <div class="composer-info">
+                    <h3>Bayo</h3>
+                    <h4>Erick Odiweric</h4>
+                    <p>Erick Odiweric (b 1996) is a Kenyan composer, currently based in Nairobi. His music employs beauty, freedom, justice and simplicity. He learnt music with his teacher Aol Onyango at the Premier Academy of Music and also directed the Tumsda Choir-Mombasa.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Etienne_Rolin.jpg" alt="Etienne Rolin">
+                <div class="composer-info">
+                    <h3>Sharpened C for Daniel Vaczi</h3>
+                    <h4>Etienne Rolin</h4>
+                    <p>This one minute work for Glissotar is centered around C sharp that is presented through the prism of a rich variety of articulation and timbral modification. Via glissandi, slap tongue, finger percussion, snapping, fluttertongue voice and multiphonics, "Sharpened C" reveals a constellation of complexity.</p>
+                    <p>Etienne Rolin is a French-American composer, soundpainter, performer and woodwind specialist working in Bordeaux. His catalogue consists of over 1000 works with an important compilation of recordings. He performs on bansuri flute, basset horn, glissotar and the Sampo box for augmented sounds.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Juan_Maria_Solare_15.jpg" alt="Juan Maria Solare">
+                <div class="composer-info">
+                    <h3>Stenoglissium</h3>
+                    <h4>Juan Maria Solare</h4>
+                    <p>Aesthetically jazzy but not entirely tonal, this piece is based on a diatonic 12-note series, presenting a familiar yet unconventional harmonic world. Using consonant twelve-tone technique, Stenoglissium evokes Latin American magical realism: the ordinary suddenly transforms into the extraordinary, blending the everyday with the impossible.</p>
+                    <p>Juan Maria Solare (1966, Argentina), works in Germany as composer, pianist, and teaching at the University of Bremen. His music has been performed across five continents, earned 11 composition prizes and received 30 million streams on Spotify. Over 33 CDs of different performers feature music by him.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Jason_Taurins.jpg" alt="Jason A. Taurins">
+                <div class="composer-info">
+                    <h3>Nitrogen</h3>
+                    <h4>Jason A. Taurins</h4>
+                    <p>Nitrogen is the seventh element on the periodic table. Forming the vast majority of the Earth's atmosphere, nitrogen is a key component in fertilizers which keep 8 billion people fed. This is a continuation of my series of miniatures on each of the chemical elements.</p>
+                    <p>Jason Taurins (born 1991) is an American composer based in Phoenix, AZ. He studied with Lisa Coons and Richard Adams at Western Michigan University. His music is regularly performed around the world.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Alex_Temple.jpg" alt="Alex Temple">
+                <div class="composer-info">
+                    <h3>What happens when you zoom in</h3>
+                    <h4>Alex Temple</h4>
+                    <p>"What happens when you zoom in" was inspired by scanning electron microscope images, which reveal that seemingly smooth surfaces are actually full of roughness and discontinuity. It starts with a bebop-esque lick, then repeatedly slows it down, adding more pitch slides, microtonal inflections and special effects each time.</p>
+                    <p>Alex Temple writes music that distorts and combines iconic sounds to create new meanings, often in service of surreal, cryptic or fantastical narratives. Her collaborators include Mellissa Hughes, Julia Holter, wild Up, Spektral Quartet and the Detroit Symphony Orchestra. She is currently an Assistant Professor at Arizona State University.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Jean-Pierre_Vial.jpg" alt="Jean-Pierre Vial">
+                <div class="composer-info">
+                    <h3>Prelude to an iPhone's Afternoon</h3>
+                    <h4>Jean-Pierre Vial</h4>
+                    <p>A short fantasia that exploits the glissando capability of the glissonic tarogato (glissotar) for presenting a minute variation on the theme of Debussy's "Prelude a l'apres-midi d'un Faune" (Prelude to "The Afternoon of a Faun"). The piece is dedicated to glissotarist Daniel Vaczi.</p>
+                    <p>Jean-Pierre Vial, born in 1946 near Paris, France, is a former software designer. At an early age, he learned the piano, the organ, and composed several pieces for both instruments. Over the last decade, various soloists, small ensembles, or orchestras have performed his music worldwide.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Anna_Vriend.jpg" alt="Anna Vriend">
+                <div class="composer-info">
+                    <h3>Scivolando</h3>
+                    <h4>Anna Vriend</h4>
+                    <p>This short piece for glissotar is dedicated to Daniel Vaczi. It plays around with glissandi, one of the special techniques usable on the instrument. It also exploits the techniques adopted by wind players, such as found in dynamics, articulation and vibrato.</p>
+                    <p>Anna Vriend (1961) has written music for a broad range of instruments including recorders, flute, bass clarinet, reed quintet, bowed and plucked string instruments, reed organ, organ, piano and choir. Several of her works have been performed on 15 Minutes of Fame.</p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="composer-entry">
+                <img src="img/Mark_Zaki.jpg" alt="Mark Zaki">
+                <div class="composer-info">
+                    <h3>Babble and Bend</h3>
+                    <h4>Mark Zaki</h4>
+                    <p>Babble and Bend explores the Glissotar's expressive range through playful slides, sharp pivots, and flowing lines. Inspired by spontaneous speech and serpentine motion, the piece highlights the instrument's capacity to twist, stretch, and shift — always in motion, always changing, like a voice that can't sit still.</p>
+                    <p>Building on his many diverse interests, Mark Zaki's work ranges from historically-informed and traditional chamber music to electroacoustic music, intermedia composition, and music for film. Dividing his time between NYC and Princeton NJ, he is Professor of Music at Rutgers University-Camden, where he has taught since 2008.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/">About</a></li>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/concerts">Concerts</a></li>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/musicians">Musicians</a></li>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/composers">Composers</a></li>
+            <li><a href="http://www.voxnovus.com/15_Minutes_of_Fame/calls">Calls for Scores</a></li>
+            <li><a href="http://www.voxnovus.com">Vox Novus</a></li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
